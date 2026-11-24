@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente de Reddit - Carriles Personalizables</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="barra-superior">
+      <div class="contenido-barra">
+        <h1>Mini Cliente Reddit</h1>
+        <form id="formulario-agregar" class="formulario-agregar">
+          <input
+            type="text"
+            id="entrada-subreddit"
+            placeholder="Ej. javascript, learnprogramming..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="boton-agregar">+ Agregar carril</button>
+        </form>
+      </div>
+      <!-- Mensaje global claro para errores o avisos al agregar -->
+      <p id="mensaje-estado" class="mensaje-estado" aria-live="polite"></p>
+    </header>
+
+    <main class="contenedor-principal">
+      <section id="contenedor-carriles" class="contenedor-carriles">
+        <!-- Aquí se generan los carriles dinámicamente con JavaScript -->
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
